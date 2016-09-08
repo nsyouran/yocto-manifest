@@ -3,7 +3,11 @@
   <!-- You can have as many remote repositories as you like -->
   <remote fetch="git://github.com/bmwcarit" name="bmwcarit"/>
   <remote fetch="git://github.com/gumstix" name="gumstix"/>
+  <remote fetch="git://github.com/imyller" name="imyller"/>
+  <remote fetch="git://github.com/kipr" name="kipr"/>
+  <remote fetch="git://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
   <default remote="gumstix" revision="default"/>
@@ -12,10 +16,14 @@
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
+  <project name="meta-browser" path="poky/meta-browser" remote="OSSystems" revision="e114d625d4bd23a52cc1108a45d96ffd8dc0ab7f" upstream="refs/heads/master"/>
   <project name="meta-gumstix" path="poky/meta-gumstix" revision="8ea631d8ef26cb13102dac0910be52674cb7b395" upstream="refs/heads/fido"/>
   <project name="meta-gumstix-extras" path="poky/meta-gumstix-extras" revision="15cfa9fcff75d3d95f66cfa190e1b604ff5ea4f6" upstream="refs/heads/fido"/>
   <project name="meta-java" path="poky/meta-java" remote="yocto" revision="66c97ae7461f4c1a13917131787bb76dc34e6b6f" upstream="refs/heads/master"/>
+  <project name="meta-kipr" path="poky/meta-kipr" remote="kipr" revision="fea56455e76343c4112e59734dff7ff7d249f04d" upstream="refs/heads/version-bump-v21"/>
+  <project name="meta-nodejs" path="poky/meta-nodejs" remote="imyller" revision="65ccd459ecff3fd5958509e535426135fa1381be" upstream="refs/heads/master"/>
   <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="10d3c8f85280a0bf867a8e4f84bcda81c290d28e" upstream="refs/heads/fido"/>
+  <project name="meta-qt5" path="poky/meta-qt5" remote="meta-qt5" revision="51b4620392aa9041d8512549bfa554bea368c5ea" upstream="refs/heads/master"/>
   <project name="meta-ros" path="poky/meta-ros" remote="bmwcarit" revision="d465a23c0a96e651419d46b29ab7c0c3663da314" upstream="refs/heads/master"/>
   <project name="meta-ti" path="poky/meta-ti" remote="yocto" revision="03cb3ff15f3b8535ca409ce682f44ec1b81da0c3" upstream="refs/heads/fido"/>
   <project name="poky" remote="yocto" revision="83aa565d93aacae484976562ef1ae8dbbb6b2bc0" upstream="refs/heads/fido"/>
