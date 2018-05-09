@@ -2,30 +2,54 @@
 <manifest>
   <!-- You can have as many remote repositories as you like -->
   <remote fetch="git://github.com/bmwcarit" name="bmwcarit"/>
-  <remote fetch="git://github.com/gumstix" name="gumstix"/>
   <remote fetch="git://github.com/imyller" name="imyller"/>
   <remote fetch="git://github.com/kipr" name="kipr"/>
   <remote fetch="git://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/linux-sunxi" name="sunxi"/>
+  <remote fetch="git://github.com/nsyouran" name="wisegaint"/>
 
-  <default remote="gumstix" revision="default"/>
   <!-- List all the repositories you want to fetch -->
   <!-- "name": git repository's name on hosting server
        "remote": the remote host from above (if not the default)
        "revision": commitish to checkout (if not the default)
        "path": directory where git repository gets cloned/synced -->
-  <project name="meta-browser" path="poky/meta-browser" remote="OSSystems" revision="e114d625d4bd23a52cc1108a45d96ffd8dc0ab7f" upstream="refs/heads/master"/>
-  <project name="meta-gumstix" path="poky/meta-gumstix" revision="8ea631d8ef26cb13102dac0910be52674cb7b395" upstream="refs/heads/fido"/>
-  <project name="meta-gumstix-extras" path="poky/meta-gumstix-extras" revision="15cfa9fcff75d3d95f66cfa190e1b604ff5ea4f6" upstream="refs/heads/fido"/>
-  <project name="meta-java" path="poky/meta-java" remote="yocto" revision="66c97ae7461f4c1a13917131787bb76dc34e6b6f" upstream="refs/heads/master"/>
-  <project name="meta-kipr" path="poky/meta-kipr" remote="kipr" revision="117bdfa1543b2fd334fa5423cfd4df947c779f2a" upstream="refs/heads/master"/>
-  <project name="meta-nodejs" path="poky/meta-nodejs" remote="imyller" revision="65ccd459ecff3fd5958509e535426135fa1381be" upstream="refs/heads/master"/>
-  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="10d3c8f85280a0bf867a8e4f84bcda81c290d28e" upstream="refs/heads/fido"/>
-  <project name="meta-qt5" path="poky/meta-qt5" remote="meta-qt5" revision="51b4620392aa9041d8512549bfa554bea368c5ea" upstream="refs/heads/master"/>
-  <project name="meta-ros" path="poky/meta-ros" remote="bmwcarit" revision="d465a23c0a96e651419d46b29ab7c0c3663da314" upstream="refs/heads/master"/>
-  <project name="meta-ti" path="poky/meta-ti" remote="yocto" revision="03cb3ff15f3b8535ca409ce682f44ec1b81da0c3" upstream="refs/heads/fido"/>
+  
+  <!-- meta -->
+  <!-- meta-yocto -->
   <project name="poky" remote="yocto" revision="83aa565d93aacae484976562ef1ae8dbbb6b2bc0" upstream="refs/heads/fido"/>
+
+  <!-- meta-openembedded/meta-gnome -->
+  <!-- meta-openembedded/meta-oe -->
+  <!-- meta-openembedded/meta-xfce -->
+  <!-- meta-openembedded/meta-systemd -->
+  <!-- meta-openembedded/meta-networking -->
+  <!-- meta-openembedded/meta-multimedia -->
+  <!-- meta-openembedded/meta-python -->
+  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="10d3c8f85280a0bf867a8e4f84bcda81c290d28e" upstream="refs/heads/fido"/>
+
+  <!-- meta-kipr -->
+  <project name="meta-kipr" path="poky/meta-kipr" remote="kipr" revision="22d30d0a9aca50e17ca6623981f4cedbf908233c" upstream="refs/heads/version-bump-v24"/>
+
+  <!-- meta-qt5 -->
+  <project name="meta-qt5" path="poky/meta-qt5" remote="meta-qt5" revision="90919b9d86988e7da01fa2c0a07246b5b5600a5d" upstream="refs/heads/fido"/>
+
+  <!-- meta-ros -->
+  <project name="meta-ros" path="poky/meta-ros" remote="bmwcarit" revision="d465a23c0a96e651419d46b29ab7c0c3663da314" upstream="refs/heads/master"/>
+  
+  <!-- meta-browser -->
+  <project name="meta-browser" path="poky/meta-browser" remote="OSSystems" revision="e114d625d4bd23a52cc1108a45d96ffd8dc0ab7f" upstream="refs/heads/master"/>
+
+  <!-- meta-nodejs --> 
+  <project name="meta-nodejs" path="poky/meta-nodejs" remote="imyller" revision="65ccd459ecff3fd5958509e535426135fa1381be" upstream="refs/heads/master"/>
+  
+  <!-- meta-sunxi --> 
+  <project name="meta-sunxi" path="poky/meta-sunxi" remote="sunxi" revision="8a9c1d688c80f21c28836e7fa3e8f945ca84927b" upstream="refs/heads/fido"/>
+
+  <!-- meta-wisegaint --> 
+  <project name="meta-wisegaint" path="poky/meta-wisegaint" remote="wisegaint" revision="109d6ee96f26d7f0a0173be62e6177ea16c69019" upstream="refs/heads/master"/>
+  
 </manifest>
 
